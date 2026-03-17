@@ -262,8 +262,7 @@
   <div class="gallery-item-inner">
     <img src="cake1.png" alt="Ombre Layer Cake" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;"/>
   </div>
-  <div class="gallery-overlay"><span>Ombre Layer Cake</span></div>
-</div>
+<div class="gallery-overlay" onclick="document.getElementById('lightbox').style.display='flex'"><span>View Full Photo</span></div></div>
       <div class="gallery-item fade-in">
         <div class="gallery-item-inner">
           <div class="gallery-placeholder">
@@ -458,6 +457,9 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <p class="footer-copy">© 2024 Sweet Tooth Cakery · All rights reserved</p>
+    <div id="lightbox" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.9);z-index:9999;align-items:center;justify-content:center;cursor:pointer;">
+  <img src="cake1.png" style="max-height:90vh;max-width:90vw;object-fit:contain;"/>
+</div>
   </footer>
 
   <script>
